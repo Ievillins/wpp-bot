@@ -1,9 +1,5 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-import time
 
 app = Flask(__name__)
 sessoes = {}  # telefone -> lista de boletos disponíveis
